@@ -16,7 +16,3 @@ function App() {
 }
 
 export default App
-<<<<<<< HEAD
-=======
-
->>>>>>> 530f3aa (atualização footer)
