@@ -1,0 +1,304 @@
+.product-session{
+    background-color: #0d0d0d;
+    color: #fff;
+    position: relative;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 700px;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.brand-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+.brand-text{
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.product-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.product-subtitle{
+    margin-bottom: 1rem;
+}
+
+.product-description{
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.more-info{
+    text-decoration: none;
+    color: #fff;
+}
+
+.more-info:hover{
+    color: red;
+}
+
+.title-size{
+    margin: 1rem;
+}
+
+.size-option{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.size-box{
+    display: flex;
+    flex-direction: row;
+    background-color: #1c1c1c;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.size-box:hover{
+    background-color: #3c3c3c;
+}
+
+.container-image-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content-image{
+    max-width: 500px;
+    filter: brightness(1.1);
+    z-index: 5;
+    width: 90%;
+    margin-top: 12rem;
+    transform: rotate(35deg);
+    transition: transform 0.5s ease;
+}
+
+.play-button-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content-play{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.content-play p {
+    color: #fff;
+}
+
+.play-button{
+    background-color: #fff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.play-button:hover{
+    transform: scale(1.05);
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.right-text{
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.navigation-icons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.container-arrow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.arrow-icon{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 1px solid #fff;
+    height: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.arrow-icon:hover{
+    background-color: #fff;
+    color: #0d0d0d;
+}
+
+.background-text{
+    font-size: 5.5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 7vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+}
+
+.blur-circle{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.45);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(100px);
+    border-radius: 50%;
+}
+
+@media (max-width: 2100px) {
+    .background-text{
+        top: 20vh;
+    }
+}
+
+@media (max-width: 1440px) {
+    .background-text{
+        top: 22vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .background-text{
+        top: 19vh;
+        font-size: 5.5vw;
+    }
+    
+    .content-play{
+        margin-top: 2.5rem;
+    }
+
+    .content-image{
+        margin-top: 10rem;
+        
+    }
+    .brand-info{
+        padding: 0.5rem;
+    }
+       
+}
+
+@media (max-width: 900px) {
+
+    .content-image{
+        max-width: 400px;
+    }
+    
+    .background-text{
+        top: 70vh;
+        font-size: 10vw;
+    }
+    
+    .right-section{
+        padding: 1rem;
+    }
+
+    .right-text {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .product-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-arrow{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    
+    .brand-info{
+        padding: 0.3rem;
+    }
+
+    .brand-text{
+        max-width: 400px;
+    }
+        
+}
+
+@media (max-width: 500px) {
+    .background-text{
+        display: flex;
+        justify-content: center;
+        top: 70vh;
+        font-size: 12vw;
+        width: 400px;        
+    }
+}
+
+@media (max-width: 467px) {
+    .background-text{
+        top: 75vh;        
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .background-text{
+        display: flex;
+        justify-content: center;
+        top: 84vh;
+        font-size: 12vw;
+        width: 400px;        
+    }
+    
+}
+
+@media (max-width: 321px) {
+    .background-text{
+        top: 95vh;
+    }     
+}
