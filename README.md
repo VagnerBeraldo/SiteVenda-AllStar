@@ -46,4 +46,4 @@ Animações Avançadas:
 📝 Notas Adicionais
 Este projeto foi desenvolvido como parte de estudos pessoais, e qualquer feedback ou contribuição é bem-vindo.
 
-# SiteVenda_All_Star (https://site-venda-all-star.vercel.app/)
+# SiteVenda_All_Star (https://site-venda-all-star.vercel.app/){:target="_blank"}
